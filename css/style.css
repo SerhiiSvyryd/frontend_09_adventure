@@ -35,3 +35,27 @@ ul, li {
     width: 100%;
     position: absolute;
 }
+
+.content {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+}
+
+.leang {
+    position: relative;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    border: 2px solid green;
+}
+
+.leang:hover .menu-dropdown {
+    display: block;
+}
