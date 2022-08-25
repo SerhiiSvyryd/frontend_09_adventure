@@ -50,16 +50,30 @@ ul, li {
 
 .leang {
     position: relative;
+    width: 10%;
+    text-align: center;
+    border: 1px solid white;
+    background:rgba(58, 206, 235, 0.5);
+}
+
+link {
 }
 
 .menu-dropdown {
-    display: none;
     position: absolute;
+    display: none;
+    padding: 10%;
     border: 2px solid green;
 }
 
 .leang:hover .menu-dropdown {
     display: block;
+}
+
+.menu-dropdown__item {
+    width: 100%;
+    margin: 6%;
+    background: rgba(58, 206, 235, 0.5);
 }
 
 .booking {
