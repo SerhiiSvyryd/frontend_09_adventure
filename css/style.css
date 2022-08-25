@@ -72,3 +72,13 @@ ul, li {
 .booking__hotel {
     padding-right: 75%;
 }
+
+.main {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(222, 184, 135, 0.5);
+}
