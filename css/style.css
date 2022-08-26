@@ -110,7 +110,7 @@ ul, li {
     position: absolute;
     width: 100%;
     margin: 10% auto;
-    padding: 0 11%;
+    padding: 0 11%;;
     padding-top: 10%;
     line-height: 1.5rem;
 }
@@ -163,17 +163,4 @@ ul, li {
 img {
     height: 160px;
     width: 25%;
-}
-
-.footer {
-    position: absolute;
-    width: 100%;
-    padding-top: 50%;
-    text-align: center;
-}
-
-.link__footer {
-    padding: 1%;
-    background: #d9eb94;
-    border-radius: 24px;
 }
