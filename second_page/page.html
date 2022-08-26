@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="aside">
+        <section class="video">
+            <div class="video__content">
+                <video class="video__media" src="../video/waves.mp4" autoplay muted loop></video> 
+            </div> 
+        </section>
+            <main class="main">
+            <form action="https://fom.in.ua/echo" class="reg" action="../Д.З/registration.html" method="post">
+                <fieldset>
+                    <h1>
+                        <legend>
+                            Регистарция 
+                        </legend>
+                    </h1>
+                    <p>
+                        <label>
+                            Имя которое будут видеть другие пользователи
+                            <input type="name" name="name"/>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Фамилия
+                            <input type="surname" name="surname" />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            E-mail
+                            <input type="email" name="email"/>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Укажите дату бронирования
+                            <input type="date" name="date" min="1920-03-15" max="2022-03-14" />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" />
+                        </label>
+                    </p>
+                </fieldset>
+                <br>
+                <p>
+                    <input type="submit" value="Отправить" />
+                </p>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
