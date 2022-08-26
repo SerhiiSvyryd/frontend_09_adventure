@@ -50,7 +50,6 @@ ul, li {
     position: relative;
     width: 10%;
     text-align: center;
-    border: 1px solid white;
     background:rgba(103, 153, 2, 0.399);
 }
 
@@ -178,4 +177,17 @@ ul, li {
 img {
     height: 160px;
     width: 25%;
+}
+
+.main__registration {
+    text-align: center;
+    background: rgba(169, 170, 170, 0.9);
+    border-radius: 24px;
+}
+
+.input {
+    margin: 20px auto;
+    border: 2px solid #eebe2d;
+    outline: none;
+    border-radius: 24px;
 }
