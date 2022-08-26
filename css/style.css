@@ -93,6 +93,24 @@ ul, li {
     align-items: center;
 }
 
+.banner {
+    position: fixed;
+    width: 4%;
+    height: 8%;
+    top: 35%;
+    left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(227, 120, 5, 0.8);
+    border-radius: 70px;
+    z-index: 2;
+}
+
+.wrapper__content{
+    z-index: 1;
+}
+
 .description {
     position: absolute;
     top: 100%;
