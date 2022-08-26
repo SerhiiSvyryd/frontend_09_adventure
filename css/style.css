@@ -44,7 +44,6 @@ ul, li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid red;
 }
 
 .leang {
@@ -60,7 +59,6 @@ ul, li {
     width: 100%;
     display: none;
     padding: 0 9%;
-    border: 2px solid green;
 }
 
 .leang:hover .menu-dropdown {
@@ -77,7 +75,6 @@ ul, li {
     display: flex;
     flex-direction: row;
     padding-right: 7%;
-    border: 2px solid gold;
 }
 
 .booking__hotel {
