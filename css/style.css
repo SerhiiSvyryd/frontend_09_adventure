@@ -13,6 +13,7 @@ html {
 body {
     font-size: 1.3rem;
     line-height: 1;
+    color: rgb(1, 36, 1);
 }
 
 a {
@@ -23,6 +24,9 @@ ul, li {
     list-style: none;
 }
 
+div .wrapper {
+    background-attachment: fixed;
+}
 .video {
     width: 100%;
     height: 100vh;
@@ -56,13 +60,11 @@ ul, li {
     background:rgba(103, 153, 2, 0.399);
 }
 
-link {
-}
-
 .menu-dropdown {
     position: absolute;
+    width: 100%;
     display: none;
-    padding: 10%;
+    padding: 0 10%;
     border: 2px solid green;
 }
 
@@ -72,7 +74,7 @@ link {
 
 .menu-dropdown__item {
     width: 100%;
-    margin: 6%;
+    padding: 0 6%;
     background: rgba(103, 153, 2, 0.399);
 }
 
