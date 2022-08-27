@@ -1,4 +1,4 @@
-* {
+* {          /* Задаем свойства вместо создания файла reset */
     margin: 0;
     padding: 0;
     outline: 0;
@@ -7,25 +7,24 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 16px; /* задаем размер для текста*/
 }
 
 body {
-    font-size: 1.3rem;
-    line-height: 1;
-    color: rgb(1, 36, 1);
-    
+    font-size: 1.3rem; /* измеряем размер текста в ремах */
+    line-height: 1; /* расстояние над и под элементами */ 
+    color: rgb(1, 36, 1); /* цвет содержимого тела (текст)*/
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* эффекты для ссылок убрал */
 }
 
 ul, li {
-    list-style: none;
+    list-style: none; /* убираем маркеры для элементов */
 }
 
-.video,
+.video, /* ширина блоков */
 .video__media,
 .header__content,
 .menu-dropdown,
@@ -37,9 +36,9 @@ ul, li {
     width: 100%;
 }
 
-.video {
+.video {   /* высота видео ровно высота страницы*/
     height: 100vh;
-    position: relative;
+    position: relative;  /* задаем порядок отображения элементов */
 }
 
 .video__media,
@@ -49,30 +48,30 @@ ul, li {
 .description,
 .wrapper,
 .wrapper article {
-    position: absolute;
+    position: absolute;  /* элемент позиционируется относительно своего предка */
 }
 
 .header__content,
 .booking,
 .main,
 .banner {
-    display: flex;
+    display: flex; /* задаем параметр для выравнивания дочерних элементов */
 }
 
 .header__content,
 .booking {
-    flex-direction: row;
+    flex-direction: row; /* выравниваем горизонтально блоки*/
 }
 
 .header__content,
 .wrapper article {
-    top: 0;
-    left: 0;
+    top: 0; /* задаем расстояние для элементов */
+    left: 0; /* отступ слева */
 }
 
 .header__content {
     padding: 3%;
-    justify-content: space-between;
+    justify-content: space-between; /* размещаем элементы с помощью display flex по краям*/
 }
 
 [class$="link"]{ 
@@ -82,22 +81,22 @@ ul, li {
 .leang,
 .description,
 .main__registration {
-    text-align: center;
+    text-align: center; /* тект по центру */ 
 }
 
 .leang {
-    position: relative;
-    width: 10%;
+    position: relative; /* задаем порядок отображения элементов */
+    width: 10%;     /* ширина */ 
 
 }
 
 .menu-dropdown {
-    display: none;
-    padding: 0 9%;
+    display: none; /* скрытие элементов */
+    padding: 0 9%; /* отступ по бокам, но вертикально без отступов */
 }
 
 .leang:hover .menu-dropdown {
-    display: block;
+    display: block; /* отображаем элемент как элемент блока после наведения курсора */
 }
 
 [class*="wrapper"] {
@@ -105,44 +104,44 @@ ul, li {
 }
 
 .menu-dropdown__item {
-    padding: 0 6%;
+    padding: 0 6%; /* отступ по бокам, но вертикально без отступов */
 }
 
 .booking {
-    padding-right: 7%;
+    padding-right: 7%; /* отступ справа */ 
 }
 
 .booking__hotel {
-    padding-right: 75%;
+    padding-right: 75%; /* отступ справа */ 
 }
 
 .main {
     top: 20%;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* делаем главную ось вертикальную  */
+    align-items: center; /* размещаем дочерние эелементы по центру */
 }
 
 .banner {
-    position: fixed;
-    width: 4%;
-    height: 8%;
-    top: 35%;
-    left: 1%;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(227, 120, 5, 0.8);
-    border-radius: 70px;
-    z-index: 2;
+    position: fixed; /* фиксированный элемент, который при прокрутке будет оставаться в той же части экрана */ 
+    width: 4%; /* ширина баннера */
+    height: 8%; /* высота баннера */
+    top: 35%; /* отступ сверху */
+    left: 1%; /* отступ слева */
+    justify-content: center; /* дочерние блоки по центру */
+    align-items: center; /* по центру только по вертикальной оси */
+    background-color: rgba(227, 120, 5, 0.8); /* задаем цвет и прозрачность */
+    border-radius: 70px; /* делаем элемент круглым  */
+    z-index: 2; /* также задаем приоритет, чтобы блок был виден */ 
 }
 
 .wrapper__content{
-    z-index: 1;
+    z-index: 1; /* приоритет меньше, чтобы был видел фиксированный элемент */
 }
 
 .description {
-    top: 100%;
-    left: 0;
-    background: linear-gradient(180deg, rgba(39, 53, 1, 0.9), rgba(79, 186, 248, 0.3) ) ;
+    top: 100%; /* отступ от начала страницы */
+    left: 0; /* отступ слева */
+    background: linear-gradient(180deg, rgba(39, 53, 1, 0.9), rgba(79, 186, 248, 0.3) ) ; /* цвет с переходом, градиент, и прозрачность фона для описания острова */ 
 }
 
 .description__option {
@@ -152,8 +151,8 @@ ul, li {
 .wrapper {
     margin: 10% auto;
     padding: 0 11%;;
-    padding-top: 10%;
-    line-height: 1.5rem;
+    padding-top: 10%; 
+    line-height: 1.5rem; /* высота строки */
 }
 
 .wrapper label {
@@ -167,12 +166,12 @@ ul, li {
 }
 
 .wrapper input {
-    display: none;
+    display: none; /* скрываем элементы до нажатия на кнопку */
 }
 
 .wrapper input:checked+label {
-    background-color: #d9eb94;
-    color: #2c3e50;
+    background-color: #d9eb94; /* цвет блока после нажатия*/
+    color: #2c3e50; /* цвет текста */
 }
 
 .wrapper input[id="tab-1"]:checked~.content .tab-1,
@@ -180,25 +179,25 @@ ul, li {
 .wrapper input[id="tab-3"]:checked~.content .tab-3, 
 .wrapper input[id="tab-4"]:checked~.content .tab-4, 
 .wrapper input[id="tab-5"]:checked~.content .tab-5 {
-    display: block;
+    display: block; /* элменты блока ведут себя как блок при нажатии */
 }
 
 .wrapper .content {
-    clear: both;
-    position: relative;
+    clear: both; /* элемент помещается ниже других элементов */
+    position: relative; /* задаем порядок отображения элементов */
 }
 
 .wrapper article {
     padding: 4% 5%;
     background-color: rgba(76, 200, 241, 0.8);
-    display: none;
+    display: none; /* скрываем элемент */
     min-height: 200px;
     border-top: 5px solid #d9eb94;
     border-radius: 0 10px 10px 10px;
 }
 
 img {
-    height: 160px;
+    height: 160px; /* высота и ширина картинки */ 
     width: 25%;
 }
 
@@ -208,16 +207,16 @@ img {
 
 .main__registration {
     background: rgba(169, 170, 170, 0.9);
-    border-radius: 24px;
+    border-radius: 24px; /* сглаживаем углы */
 }
 
 .input {
-    margin: 20px auto;
+    margin: 20px auto; 
     border: 2px solid #eebe2d;
-    outline: none;
-    border-radius: 24px;
+    outline: none; /* убираем контур */ 
+    border-radius: 24px; /* сглаживаем углы */
 }
 
 .input:hover {
-    background: orangered;
+    background: orangered; /* цвет кнопки после наведения курсора */
 }
