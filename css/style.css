@@ -156,7 +156,7 @@ ul, li {
 }
 
 .wrapper label {
-    cursor: pointer;
+    cursor: pointer; /* при наведении курсора, курсор меняет свой вид */
     float: left;
     margin-right: 5px;
     display: block;
@@ -189,11 +189,11 @@ ul, li {
 
 .wrapper article {
     padding: 4% 5%;
-    background-color: rgba(76, 200, 241, 0.8);
+    background-color: rgba(76, 200, 241, 0.8); /* цвет фона и прозрачность */
     display: none; /* скрываем элемент */
     min-height: 200px;
-    border-top: 5px solid #d9eb94;
-    border-radius: 0 10px 10px 10px;
+    border-top: 5px solid #d9eb94; /* гринца только сверху */
+    border-radius: 0 10px 10px 10px; /* сглаживаем углы */
 }
 
 img {
