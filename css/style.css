@@ -14,6 +14,7 @@ body {
     font-size: 1.3rem;
     line-height: 1;
     color: rgb(1, 36, 1);
+    
 }
 
 a {
@@ -74,6 +75,10 @@ ul, li {
     justify-content: space-between;
 }
 
+[class$="link"]{ 
+    color: rgb(21, 78, 0); /* использовал свойство, чтобы обратится ко всем элементам в названии класса которых присутствует "link", но в конце названия класса и задал цвет ссылки*/
+}
+
 .leang,
 .description,
 .main__registration {
@@ -83,7 +88,7 @@ ul, li {
 .leang {
     position: relative;
     width: 10%;
-    background:rgba(103, 153, 2, 0.399);
+
 }
 
 .menu-dropdown {
@@ -95,9 +100,12 @@ ul, li {
     display: block;
 }
 
+[class*="wrapper"] {
+    font-size: 1.3rem;  /* использовал свойство, чтобы обратится ко всем элементам в названии класса которых присутствует "wrapper" и задал размер шрифта*/
+}
+
 .menu-dropdown__item {
     padding: 0 6%;
-    background: rgba(103, 153, 2, 0.399);
 }
 
 .booking {
@@ -194,6 +202,10 @@ img {
     width: 25%;
 }
 
+[class^="tab"]{
+    color: rgba(7, 3, 72, 0.9); /* задал свойства всем єлементом которые содержат в названии класса "tab" и изменил цвет на тёмно-синий (на всей странице тёмно-зелёный) */
+}
+
 .main__registration {
     background: rgba(169, 170, 170, 0.9);
     border-radius: 24px;
@@ -204,4 +216,8 @@ img {
     border: 2px solid #eebe2d;
     outline: none;
     border-radius: 24px;
+}
+
+.input:hover {
+    background: orangered;
 }
